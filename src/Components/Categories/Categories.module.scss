@@ -1,3 +1,18 @@
-.App {
-  background-color: brown;
+.categoryContainer {
+  box-sizing: border-box;
+
+  .btn {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(158, 136, 11);
+    color: rgb(158, 136, 11);
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: rgb(158, 136, 11);
+    color: white;
+  }
 }

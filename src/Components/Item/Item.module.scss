@@ -1,0 +1,66 @@
+.itemContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  .imageContainer {
+    height: 9vw;
+    min-width: 16vw;
+    max-width: 16vw;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    border: 3px solid rgb(158, 136, 11);
+    border-radius: 10px;
+
+    .image {
+      width: 100%;
+    }
+  }
+}
+
+.ItemRightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  .ItemUpperRight {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      text-transform: capitalize;
+      letter-spacing: 2px;
+    }
+
+    .price {
+      color: rgb(158, 136, 11);
+    }
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 1200px) {
+    h4 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.underline {
+  height: 1px;
+  background-color: rgb(122, 160, 207);
+  margin-bottom: 0.5rem;
+}

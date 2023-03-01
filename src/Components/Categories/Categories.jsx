@@ -1,9 +1,12 @@
+import { useCallback } from "react";
 import styles from "./Categories.module.scss";
 
-const Categories = ({ category }) => {
+const Categories = ({ category, onClick }) => {
   return (
-    <div className={styles.App}>
-      <button>{category}</button>
+    <div className={styles.categoryContainer}>
+      <button className={styles.btn} onClick={onClick}>
+        {category}
+      </button>
     </div>
   );
 };
